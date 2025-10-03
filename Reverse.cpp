@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-        char word[99];
-        cin.get(word, 99);
+        char word[100];
+        cin.get(word, 100);
         int word_length = 0;
         for (int i = 0; word[i] != '\0'; i++){
                 word_length++;
@@ -14,7 +14,6 @@ int main(){
                 reversed_word[i] = word[n];
                 i++;
         }
-        reversed_word[i] = '\0';
 
         cout << reversed_word << endl;
         cout << word_length << endl;
